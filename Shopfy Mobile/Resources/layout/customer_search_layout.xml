@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_gradient_background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customer_search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/secondaryVeryLightColor"
+        app:titleTextColor="@android:color/black"
+        android:elevation="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/customer_search_search_bar_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Search customers"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:focusable="auto"
+            android:background="@null"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e2"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">       
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/customer_search_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        /> 
+
+        <ProgressBar
+            android:id="@+id/customer_search_progressbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "59437397251",
+    "firebase_url": "https://star-571c6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "star-571c6",
+    "storage_bucket": "star-571c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59437397251:android:c4d7f58c43f52f1a696536",
+        "android_client_info": {
+          "package_name": "Shopfy.x5Star.UserSalePrices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59437397251-88betkisjvvpdpnd449saaobvcckhgjt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-JAuj0wB1p5in_z32dnwMTGXmRKXUkfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59437397251-88betkisjvvpdpnd449saaobvcckhgjt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

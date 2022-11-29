@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="158dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:elevation="2dp"
+    android:background="@drawable/customer_report_row_layout_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:id="@+id/customer_report_row_name_icon_tv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="R"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:background="@drawable/customer_report_name_icon"/>
+
+        <TextView
+            android:id="@+id/customer_report_row_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name : Ravi Kant"
+            android:textSize="16dp"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:layout_toRightOf="@+id/customer_report_row_name_icon_tv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/customer_report_row_phone_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone : 099777271646"
+            android:textSize="16dp"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:layout_toRightOf="@+id/customer_report_row_name_icon_tv"
+            android:layout_below="@+id/customer_report_row_name_tv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/customer_report_row_address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address : Zeyawaddi Town, Phyu Township"
+            android:textSize="16dp"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:layout_toRightOf="@+id/customer_report_row_name_icon_tv"
+            android:layout_below="@+id/customer_report_row_phone_tv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>    
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/secondaryVeryLightColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.2">        
+
+        <!-- Call Layout -->
+
+        <LinearLayout
+            android:id="@+id/customer_report_row_call_layout"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33">
+
+            <ImageView
+                android:id="@+id/customer_report_row_call_img"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/phone_24"/>
+
+            <TextView
+                android:id="@+id/customer_report_row_call_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textSize="16dp"
+                android:textColor="?android:attr/colorPrimaryDark"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <!-- Edit Layout -->
+
+        <RelativeLayout
+            android:id="@+id/customer_report_row_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34">
+
+            <ImageView
+                android:id="@+id/customer_report_row_edit_img"
+                android:layout_centerVertical="true"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/edit_24"
+                android:layout_toLeftOf="@+id/customer_report_row_edit_tv"/>
+
+            <TextView
+                android:id="@+id/customer_report_row_edit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="16dp"
+                android:textColor="?android:attr/colorPrimaryDark"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+        <!-- Remove Layout -->
+
+        <RelativeLayout
+            android:id="@+id/customer_report_row_remove_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <ImageView
+                android:id="@+id/customer_report_row_remove_img"
+                android:layout_centerVertical="true"                
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/remove"
+                android:layout_toLeftOf="@+id/customer_report_row_remove_tv"/>
+
+            <TextView
+                android:id="@+id/customer_report_row_remove_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:textSize="16dp"
+                android:textColor="?android:attr/colorPrimaryDark"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

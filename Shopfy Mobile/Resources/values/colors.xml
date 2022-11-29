@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#484848</color>
+	<color name="secondaryColor">#37474f</color>
+	<color name="secondaryLightColor">#62727b</color>
+	<color name="secondaryDarkColor">#102027</color>
+	<color name="primaryTextColor">#ffffff</color>
+	<color name="secondaryTextColor">#ffffff</color>
+	<color name="secondaryVeryLightColor">#cfd8dc</color>
+	<color name="secondaryTooLightColor">#607d8b</color>
+	<color name="customer_report_name_icon_color">#FFFF00</color>
+	<color name="colorPink">#fc03d3</color>
+	<color name="colorLightGreen">#16e038</color>
+	<color name="colorLightViolet">#b816e0</color>
+	<color name="colorLightMarvel">#e04916</color>
+	<color name="colorLightYellow">#d3e016</color>
+	<color name="colorSkyBlue">#16e0d0</color>
+	<color name="colorGrey">#808080</color>
+	<color name="colorBlack">#000000</color>
+	<color name="primary_text">#212121</color>
+	<color name="secondary_text">#757575</color>
+	<color name="input_background">#ECECEC</color>
+	<color name="icon_background">#20FFFFFF</color>
+	<color name="white">#FFFFFF</color>
+	<color name="dark_red">#751d16</color>
+</resources>

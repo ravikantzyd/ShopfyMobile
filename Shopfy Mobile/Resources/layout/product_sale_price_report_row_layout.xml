@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp"    
+    android:elevation="@dimen/_2sdp"
+    android:background="@drawable/product_sale_price_report_row_layout_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/product_sale_price_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"        
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:background="@drawable/background_icon"
+            android:scaleType="fitStart"  
+            android:src="@drawable/default_image"
+            app:riv_corner_radius="@dimen/_8sdp"
+            android:layout_gravity="right"
+            android:maxWidth="@dimen/_200sdp"        
+            android:maxHeight="@dimen/_300sdp"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_brand_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brand Name      : 5 Star"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@+id/product_sale_price_img"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_product_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name  : LED 50W"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_below="@+id/product_sale_price_report_row_brand_name_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_unit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit                     : ဖာ"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"            
+            android:layout_below="@+id/product_sale_price_report_row_product_name_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price                   : 100"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"            
+            android:layout_below="@+id/product_sale_price_report_row_unit_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_item_dis_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Discount   : 5 %"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"            
+            android:layout_below="@+id/product_sale_price_report_row_price_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_cash_dis_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash Discount  : 5 %"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"            
+            android:layout_below="@+id/product_sale_price_report_row_item_dis_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_branch_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Branch               : Zeyawaddi Branch"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"            
+            android:layout_below="@+id/product_sale_price_report_row_cash_dis_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_level_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level               : Zeyawaddi Branch"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"            
+            android:layout_below="@+id/product_sale_price_report_row_branch_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/product_sale_price_report_row_city_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City                     : Zeyawaddi Town"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="?android:attr/colorPrimaryDark"
+            android:layout_below="@+id/product_sale_price_report_row_level_tv"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+    </RelativeLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/product_sale_price_order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="@color/colorLightGreen"
+        android:text="Order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:cornerRadius="@dimen/_8sdp"/>
+
+</LinearLayout>

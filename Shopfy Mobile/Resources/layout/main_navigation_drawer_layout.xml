@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Profile -->
+
+    <RelativeLayout
+        android:id="@+id/main_nav_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:background="@drawable/main_nav_header_layout_bg">
+
+         <ImageView
+            android:id="@+id/main_nav_header_logo_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/shofy2"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="We Design Your Idea"/>
+		
+        <TextView
+            android:id="@+id/main_nav_header_user_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_id"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/main_nav_header_logo_img"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/main_nav_header_branch_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/branch_name"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:gravity="left"
+            android:layout_toRightOf="@+id/main_nav_header_logo_img"
+            android:layout_below="@+id/main_nav_header_user_id_tv"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:id="@+id/main_nav_main_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+
+        <!-- Sales -->
+
+        <LinearLayout
+            android:id="@+id/main_nav_sale_menu_layout"
+            android:orientation="horizontal"
+            style="@style/main_nav_menu_layout_style">
+
+            <ImageView
+                android:src="@drawable/sales"
+                style="@style/main_nav_menu_title_img_style"/>
+
+            <TextView
+                android:text="Sales"
+                style="@style/main_nav_menu_title_style"
+                />
+
+            <RelativeLayout
+                android:id="@+id/main_nav_sale_menu_expend_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_nav_sale_menu_expend_img"
+                    style="@style/main_nav_menu_expend_img_style"
+                    android:src="@drawable/baseline_expand_more_24"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_nav_sale_sub_menu_layout"
+            android:orientation="vertical"
+            style="@style/main_nav_sub_menu_layout_style"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/main_nav_sale_invoice_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/salesinvoice"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Sales Return"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_nav_sale_return_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/salesreturn"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Sales Invoice"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Customers -->
+
+        <LinearLayout
+            android:id="@+id/main_nav_customer_menu_layout"
+            android:orientation="horizontal"
+            style="@style/main_nav_menu_layout_style">
+
+            <ImageView
+                android:src="@drawable/customer"
+                style="@style/main_nav_menu_title_img_style"/>
+
+            <TextView
+                android:text="Customers"
+                style="@style/main_nav_menu_title_style"
+                />
+
+            <RelativeLayout
+                android:id="@+id/main_nav_sale_menu_expend_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_nav_customer_menu_expend_img"
+                    style="@style/main_nav_menu_expend_img_style"
+                    android:src="@drawable/baseline_expand_more_24"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_nav_customer_sub_menu_layout"
+            android:orientation="vertical"
+            style="@style/main_nav_sub_menu_layout_style"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/main_nav_customer_report_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/customerreport"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Customer Report"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Stock -->
+
+        <LinearLayout
+            android:id="@+id/main_nav_stock_menu_layout"
+            android:orientation="horizontal"
+            style="@style/main_nav_menu_layout_style">
+
+            <ImageView
+                android:src="@drawable/stock32"
+                style="@style/main_nav_menu_title_img_style"/>
+
+            <TextView
+                android:text="Stock"
+                style="@style/main_nav_menu_title_style"
+                />
+
+            <RelativeLayout
+                android:id="@+id/main_nav_stock_menu_expend_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_nav_stock_menu_expend_img"
+                    style="@style/main_nav_menu_expend_img_style"
+                    android:src="@drawable/baseline_expand_more_24"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_nav_stock_sub_menu_layout"
+            android:orientation="vertical"
+            style="@style/main_nav_sub_menu_layout_style"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/main_nav_stock_report_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/stockreport32"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Stock Report"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:id="@+id/main_nav_stock_aging_sub_menu_item_layout"
+            android:orientation="horizontal"
+            style="@style/main_nav_sub_menu_item_layout_style">
+
+            <ImageView
+                android:src="@drawable/stockagingreport32"
+                style="@style/main_nav_menu_title_img_style"/>
+
+            <TextView
+                android:text="Stock Aging Report"
+                style="@style/main_nav_sub_menu_title_style"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Product -->
+
+        <LinearLayout
+            android:id="@+id/main_nav_product_menu_layout"
+            android:orientation="horizontal"
+            style="@style/main_nav_menu_layout_style">
+
+            <ImageView
+                android:src="@drawable/Product32"
+                style="@style/main_nav_menu_title_img_style"/>
+
+            <TextView
+                android:text="Product"
+                style="@style/main_nav_menu_title_style"
+                />
+
+            <RelativeLayout
+                android:id="@+id/main_nav_product_menu_expend_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_nav_product_menu_expend_img"
+                    style="@style/main_nav_menu_expend_img_style"
+                    android:src="@drawable/baseline_expand_more_24"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_nav_product_sub_menu_layout"
+            android:orientation="vertical"
+            style="@style/main_nav_sub_menu_layout_style"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/main_nav_sale_price_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/saleprice32"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Sales Price"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Cashier -->
+
+        <LinearLayout
+            android:id="@+id/main_nav_cashier_menu_layout"
+            android:orientation="horizontal"
+            style="@style/main_nav_menu_layout_style">
+
+            <ImageView
+                android:src="@drawable/cashier32"
+                style="@style/main_nav_menu_title_img_style"/>
+
+            <TextView
+                android:text="Cashier"
+                style="@style/main_nav_menu_title_style"
+                />
+
+            <RelativeLayout
+                android:id="@+id/main_nav_cashier_menu_expend_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/main_nav_cashier_menu_expend_img"
+                    style="@style/main_nav_menu_expend_img_style"
+                    android:src="@drawable/baseline_expand_more_24"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_nav_cashier_sub_menu_layout"
+            android:orientation="vertical"
+            style="@style/main_nav_sub_menu_layout_style"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/main_nav_credit_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/credit32"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Credit"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_nav_credit_collection_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/creditcollection32"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Credit Collection"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_nav_cash_in_hand_sub_menu_item_layout"
+                android:orientation="horizontal"
+                style="@style/main_nav_sub_menu_item_layout_style">
+
+                <ImageView
+                    android:src="@drawable/cashinhand32"
+                    style="@style/main_nav_menu_title_img_style"/>
+
+                <TextView
+                    android:text="Cash In Hand"
+                    style="@style/main_nav_sub_menu_title_style"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+    
+
+</LinearLayout>

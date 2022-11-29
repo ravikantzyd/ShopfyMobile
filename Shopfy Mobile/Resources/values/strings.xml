@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">5Star</string>
+    <string name="action_settings">Settings</string>
+	<string name="user_id">User Id : 0000</string>
+	<string name="branch_name">Yangon Branch</string>
+	<string name="no_internet">Please connect to the Internet!</string>
+</resources>
